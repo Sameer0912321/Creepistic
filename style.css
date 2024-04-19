@@ -1,0 +1,276 @@
+body {
+    /* background-image: url(./img/istockphoto-1334434982-612x612.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100vh;
+    margin: 0%;  
+    font-family: "Stint Ultra Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+nav{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+nav li{
+    margin-right: 1em;
+    list-style: none;
+    font-size: 1.7rem;
+}
+nav a{
+    color: white;
+    font-weight: lighter;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+a:hover{
+    color: #B30000;
+}
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    /* padding: 0% 3%; */
+    width: 100%;
+    background-image: url(./img/istockphoto-1334434982-612x612.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0%;
+    position: absolute;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-size: 3vmax;
+    color: white;
+}
+span{
+    color: #B30000;
+}
+button{
+    width: 9em;
+    height: 2.8em;
+    font-size: 1.6rem;
+    background-color: transparent;
+    border: 2px solid white ;
+    border-radius: 9px;
+    transition: 0.1s linear;
+    color: white;
+}
+button:hover{
+    background-color: #B30000;
+}
+
+#menu{
+    display: none;
+    position: relative;
+    top:0%;
+    right:0%;
+}
+#logo{
+    position: relative;
+    left: 0%;
+    top: 0%;
+}
+#resp{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.89);
+    z-index: 1;
+
+}
+#resp ul{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+#resp li{
+    margin-top: 1em;
+    list-style: none;
+    font-size: 2.3rem;
+}
+#resp a{
+    color: white;
+    font-weight: lighter;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+@media(max-width:768px){
+    #menu{
+        display: block;
+    }
+    #logo{
+       width:150px;
+       height:150px; 
+    }
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: none;
+    }
+    button{
+        font-size:1rem;
+    }
+}
+#second {
+    height: fit-content;
+    position: relative;
+    background-color: black;
+}
+.outer{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.grid{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30em,;
+    padding: 0% 3%;
+    margin: 1em;
+    border: 1px solid white;
+}
+.one {
+    color: white;
+    font-size: 2rem;
+    background-image: url(./img/6d1MV3ocwlGzTH1q2CDL--3--n3f2z_2x.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.layer{
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.313);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position:absolute;
+}
+
+.two {
+    color: white;
+    background-image: url(./img/pexels-pavel-danilyuk-7267741.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 2rem;
+    position: relative;
+}
+.grid h2,p{
+    position: relative;
+    z-index: 2;
+}
+.oneone {
+    color: white;
+    font-size: 2rem;
+    background-image: url(./img/mystic.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.twotwo {
+    color: white;
+    background-image: url(./img/meow.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 2rem;
+    position: relative;
+}
+.oneoneone {
+    color: white;
+    font-size: 2rem;
+    background-image: url(./img/haunted.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.twotwotwo {
+    color: white;
+    background-image: url(./img/seance.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 2rem;
+    position: relative;
+}
+@media(max-width:768px){
+    .outer{
+        flex-direction: column;
+    }
+    .grid{
+        width: 90%;
+        height: fit-content;
+    }
+}
+/* about us third section */
+#about{
+    width: 100%;
+    background-color: black;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2%;
+    color: white;
+    text-align: center;
+
+}
+#about h2{
+    font-size:3rem ;
+    color: red;
+}
+#about p{
+    font-size: 1.5rem;
+}
